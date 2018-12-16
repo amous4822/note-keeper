@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
