@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Note Keeper</string>
     <string name="action_settings">Settings</string>
+    <string name="hint_title">Note Title</string>
+    <string name="hint_notebody">Note Body</string>
 </resources>
