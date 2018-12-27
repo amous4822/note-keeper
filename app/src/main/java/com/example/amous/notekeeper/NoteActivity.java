@@ -1,14 +1,14 @@
 package com.example.amous.notekeeper;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import java.util.List;
 
 public class NoteActivity extends AppCompatActivity {
 
@@ -16,10 +16,16 @@ public class NoteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Spinner course= findViewById(R.id.spinner_editnote);
+        Spinner spinnerCourse= findViewById(R.id.spinner_editnote);
+
+        List<CourseInfo> course = DataManager.getInstance().getCourses();
+        ArrayAdapter<CourseInfo> courseInfoArrayAdapter =
+                new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,course);
+        courseInfoArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerCourse.setAdapter(courseInfoArrayAdapter);
 
     }
 
