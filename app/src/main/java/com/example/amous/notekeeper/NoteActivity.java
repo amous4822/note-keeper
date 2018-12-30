@@ -17,7 +17,11 @@ public class NoteActivity extends AppCompatActivity {
 
     public static final String NOTE_POSITION = "com.example.amous.notekeeper.NOTE_POSITION";
     public static final int NO_POSITION_VALUE = -1;
-    private Intent intent;
+    public static final String ORIGINAL_NOTE_ID= "com.example.amous.notekeeper.ORIGINAL_NOTE_ID";
+    public static final String ORIGINAL_NOTE_TITLE= "com.example.amous.notekeeper.ORIGINAL_NOTE_TITLE";
+    public static final String ORIGINAL_NOTE_TEXT= "com.example.amous.notekeeper.ORIGINAL_NOTE_TEXT";
+
+
     private NoteInfo mNotes;
     private boolean mIsNewNote;
     private Spinner mSpinnerCourse;
@@ -46,12 +50,32 @@ public class NoteActivity extends AppCompatActivity {
         mSpinnerCourse.setAdapter(courseInfoArrayAdapter);
 
         recieveIntents();
-        saveOriginalNoteValues();
+        if (savedInstanceState == null) {
+            saveOriginalNoteValues();
+        }else {
+            retainSavedStateBundle(savedInstanceState);
+        }
 
 
         if (!mIsNewNote)
             readDisplayPassedIntent(mSpinnerCourse, mNoteTitle, mNoteBody);
 
+    }
+
+    private void retainSavedStateBundle(Bundle savedState) {
+
+        originalCourseId = savedState.getString(ORIGINAL_NOTE_ID);
+        originalNoteTitle = savedState.getString(ORIGINAL_NOTE_TITLE);
+        originalNoteText = savedState.getString(ORIGINAL_NOTE_TEXT);
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(ORIGINAL_NOTE_ID, originalCourseId);
+        outState.putString(ORIGINAL_NOTE_TEXT, originalNoteText);
+        outState.putString(ORIGINAL_NOTE_TITLE, originalNoteTitle);
     }
 
     private void saveOriginalNoteValues() {
