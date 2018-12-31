@@ -41,31 +41,11 @@ public class NoteListActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-     //   notesArray.notifyDataSetChanged();
         mListRecyclerView.notifyDataSetChanged();
     }
 
     private void initializeDisplayContent() {
 
-/*
-        final ListView listView = findViewById(R.id.list_note);
-        List<NoteInfo> notes = DataManager.getInstance().getNotes();
-
-        notesArray = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, notes);
-        listView.setAdapter(notesArray);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                Intent intent = new Intent(NoteListActivity.this, NoteActivity.class);
-                //NoteInfo notes = (NoteInfo) listView.getItemAtPosition(position);
-
-                intent.putExtra(NoteActivity.NOTE_POSITION, position);
-                startActivity(intent);
-            }
-        });
-*/
         final RecyclerView mList = findViewById(R.id.list_note);
         final LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         mList.setLayoutManager(mLayoutManager);
