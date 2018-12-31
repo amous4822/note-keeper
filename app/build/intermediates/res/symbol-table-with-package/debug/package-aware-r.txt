@@ -1061,6 +1061,7 @@ id blocking
 id bottom
 id buttonPanel
 id cancel
+id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -1133,6 +1134,8 @@ id navigation_header_container
 id never
 id none
 id normal
+id note_course
+id note_title
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -1295,6 +1298,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout list_note_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
