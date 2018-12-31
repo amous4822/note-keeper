@@ -32,6 +32,7 @@ public class NoteActivity extends AppCompatActivity {
     private String originalNoteText;
     private String originalNoteTitle;
     private String originalCourseId;
+    private int mNotePosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,8 +122,8 @@ public class NoteActivity extends AppCompatActivity {
     private void recieveIntents() {
 
         Intent intent = getIntent();
-        int position = intent.getIntExtra(NOTE_POSITION, NO_POSITION_VALUE);
-        mIsNewNote = position == NO_POSITION_VALUE;
+        mNotePosition = intent.getIntExtra(NOTE_POSITION, NO_POSITION_VALUE);
+        mIsNewNote = mNotePosition == NO_POSITION_VALUE;
         if (mIsNewNote) {
 
             DataManager dm = DataManager.getInstance();
@@ -130,7 +131,7 @@ public class NoteActivity extends AppCompatActivity {
             mNotes = dm.getNotes().get(newNote);
 
         } else {
-            mNotes = DataManager.getInstance().getNotes().get(position);
+            mNotes = DataManager.getInstance().getNotes().get(mNotePosition);
         }
 
     }
@@ -169,9 +170,35 @@ public class NoteActivity extends AppCompatActivity {
             cancelNote = true;
             finish();
             return true;
+        } else if (id == R.id.action_next){
+            moveNext();
+            return true;
         }
 
+
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+
+        int mlastIndex = DataManager.getInstance().getNotes().size() -1;
+        MenuItem mItem = menu.findItem(R.id.action_next);
+        mItem.setEnabled(mNotePosition < mlastIndex);
+
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    private void moveNext() {
+        saveNote();
+
+        mNotePosition++;
+        mNotes = DataManager.getInstance().getNotes().get(mNotePosition);
+
+        saveOriginalNoteValues();
+        readDisplayPassedIntent(mSpinnerCourse,mNoteTitle ,mNoteBody);
+
+        invalidateOptionsMenu();
     }
 
     private void shareNotes() {

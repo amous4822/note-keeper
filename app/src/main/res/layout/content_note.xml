@@ -22,10 +22,12 @@
     <EditText
         android:id="@+id/text_notetitle"
         android:layout_width="0dp"
+        android:textCursorDrawable="@null"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:textColor="@color/black"
         android:ems="10"
         android:hint="@string/hint_title"
         android:inputType="textMultiLine"
@@ -36,6 +38,8 @@
     <EditText
         android:id="@+id/text_notebody"
         android:layout_width="0dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
