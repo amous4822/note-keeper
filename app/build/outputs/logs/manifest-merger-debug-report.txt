@@ -7,7 +7,6 @@ INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest
 MERGED from [com.android.support:design:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/amous/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9c7bb7cf05258e172158524c2f4bf1b8/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/b68a5ac998e64ea4790bde8b95b19709/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e0fed8d7609cf82e5950b31f50172abd/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/17d5ea67f1d592f3cc1af39eb1401be0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/725a5c8542d8a1767fa95cafb6bfb323/AndroidManifest.xml:17:1-22:12
@@ -15,7 +14,6 @@ MERGED from [com.android.support:support-core-ui:28.0.0] /home/amous/.gradle/cac
 MERGED from [com.android.support:support-core-utils:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/67bd5f5289dc446642ac2eb0e314462a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/38d0210ae86bd252e52df0618c1a736f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/53f3248c11adacbb01aaa50e384d6ada/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/fc73e2fb60108456969ba984d70f7f30/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/4e738fcf87cf3779ab0f25740486a96e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0c0a0db634c98a5153267e1af0c08da8/AndroidManifest.xml:17:1-22:12
@@ -126,8 +124,6 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] /home/amous/.gradle/caches
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/amous/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9c7bb7cf05258e172158524c2f4bf1b8/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/amous/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9c7bb7cf05258e172158524c2f4bf1b8/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/b68a5ac998e64ea4790bde8b95b19709/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/b68a5ac998e64ea4790bde8b95b19709/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e0fed8d7609cf82e5950b31f50172abd/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/e0fed8d7609cf82e5950b31f50172abd/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/17d5ea67f1d592f3cc1af39eb1401be0/AndroidManifest.xml:20:5-44
@@ -142,8 +138,6 @@ MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/amous/.gr
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/38d0210ae86bd252e52df0618c1a736f/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/53f3248c11adacbb01aaa50e384d6ada/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/53f3248c11adacbb01aaa50e384d6ada/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/fc73e2fb60108456969ba984d70f7f30/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/fc73e2fb60108456969ba984d70f7f30/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/4e738fcf87cf3779ab0f25740486a96e/AndroidManifest.xml:20:5-44
