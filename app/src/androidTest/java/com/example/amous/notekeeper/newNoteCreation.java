@@ -43,13 +43,13 @@ public class newNoteCreation {
     public void createNewNote() {
 
         String testBody = "testing note body";
-        String testTitle  = "testing note title";
+        String testTitle = "testing note title";
         CourseInfo mTestCourse = DataManager.getInstance().getCourse("java_lang");
 
         onView(withId(R.id.fab)).perform(click());
 
         onView(withId(R.id.spinner_editnote)).perform(click());
-        onData(allOf(instanceOf(CourseInfo.class) , equalTo(mTestCourse))).perform(click());
+        onData(allOf(instanceOf(CourseInfo.class), equalTo(mTestCourse))).perform(click());
 
         onView(withId(R.id.text_notebody)).perform(typeText(testBody)).check(matches(withText(testBody)));
         onView(withId(R.id.text_notetitle)).perform(typeText(testTitle), closeSoftKeyboard());
