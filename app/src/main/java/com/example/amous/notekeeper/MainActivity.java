@@ -3,7 +3,7 @@ package com.example.amous.notekeeper;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -21,7 +21,11 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private NoteListRecyclerView mListRecyclerView;
+    private NoteListRecyclerView mNoteRecyclerView;
+    private RecyclerView mRecyclerView;
+    private LinearLayoutManager mLinearLayoutManager;
+    private CoursesListRecyclerView mCoursesRecyclerView;
+    private GridLayoutManager mGridLayoutManager;
 
 
     @Override
@@ -39,12 +43,13 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        // connects nav_view and this class to implement listener.
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -54,19 +59,39 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-        mListRecyclerView.notifyDataSetChanged();
+        mNoteRecyclerView.notifyDataSetChanged();
     }
 
     private void initializeDisplayContent() {
 
-        final RecyclerView mList = findViewById(R.id.list_note);
-        final LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
-        mList.setLayoutManager(mLayoutManager);
+        mRecyclerView = findViewById(R.id.list_item);
 
+        mLinearLayoutManager = new LinearLayoutManager(this);
         List<NoteInfo> mNotes = DataManager.getInstance().getNotes();
-        mListRecyclerView = new NoteListRecyclerView(this, mNotes);
-        mList.setAdapter(mListRecyclerView);
+        mNoteRecyclerView = new NoteListRecyclerView(this, mNotes);
+
+        mGridLayoutManager = new GridLayoutManager(this , 2);
+        List<CourseInfo> mCourses = DataManager.getInstance().getCourses();
+        mCoursesRecyclerView = new CoursesListRecyclerView(this , mCourses);
+
+        displayNote();
+
     }
+
+    private void displayNote() {
+        mRecyclerView.setLayoutManager(mLinearLayoutManager);
+        mRecyclerView.setAdapter(mNoteRecyclerView);
+
+        navSelectionId(R.id.nav_notes);
+
+    }
+
+    private void navSelectionId(int id) {
+        NavigationView mNavigationView = findViewById(R.id.nav_view);
+        Menu mMenu = mNavigationView.getMenu();
+        mMenu.findItem(id).setChecked(true);
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -102,17 +127,17 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
+
+    //since this class implements a nav_listener some function should be there to detect the selected item hence this VVV.
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_notes) {
+            displayNote();
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_courses) {
+            displayCourses();
 
         } else if (id == R.id.nav_share) {
 
@@ -123,5 +148,14 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void displayCourses() {
+
+        mRecyclerView.setAdapter(mCoursesRecyclerView);
+        mRecyclerView.setLayoutManager(mGridLayoutManager);
+
+        navSelectionId(R.id.nav_courses);
+
     }
 }

@@ -17,8 +17,6 @@ import java.util.List;
 public class NoteListActivity extends AppCompatActivity {
     private NoteListRecyclerView mListRecyclerView;
 
-    //private ArrayAdapter<NoteInfo> notesArray;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,8 +38,10 @@ public class NoteListActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
+
         super.onResume();
         mListRecyclerView.notifyDataSetChanged();
+
     }
 
     private void initializeDisplayContent() {
@@ -53,6 +53,7 @@ public class NoteListActivity extends AppCompatActivity {
         List<NoteInfo> mNotes = DataManager.getInstance().getNotes();
         mListRecyclerView = new NoteListRecyclerView(this, mNotes);
         mList.setAdapter(mListRecyclerView);
+
     }
 
 }
