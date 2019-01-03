@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#0a0909</color>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent">@color/orange_sign</color>
     <color name="black">#020202</color>
+    <color name="orange_sign">#F05A28</color>
+    <color name="text_color_primary">#c0baba</color>
+    <color name="foreground_material_light">#fbf5f5</color>
 
 </resources>

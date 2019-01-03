@@ -38,13 +38,13 @@
     <EditText
         android:id="@+id/text_notebody"
         android:layout_width="0dp"
-        android:textCursorDrawable="@null"
-        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/hint_notebody"
         android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
         app:layout_constraintEnd_toEndOf="@+id/text_notetitle"
         app:layout_constraintStart_toStartOf="@+id/text_notetitle"
         app:layout_constraintTop_toBottomOf="@+id/text_notetitle" />

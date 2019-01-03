@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity
         List<NoteInfo> mNotes = DataManager.getInstance().getNotes();
         mNoteRecyclerView = new NoteListRecyclerView(this, mNotes);
 
-        mGridLayoutManager = new GridLayoutManager(this , 2);
+        mGridLayoutManager = new GridLayoutManager(this , getResources().getInteger(R.integer.course_grid_number));
         List<CourseInfo> mCourses = DataManager.getInstance().getCourses();
         mCoursesRecyclerView = new CoursesListRecyclerView(this , mCourses);
 

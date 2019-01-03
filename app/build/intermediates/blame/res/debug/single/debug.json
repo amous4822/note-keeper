@@ -28,6 +28,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable_ic_info_black_24dp.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/drawable/ic_info_black_24dp.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
@@ -242,6 +246,10 @@
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_template_big_media_custom.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -492,6 +500,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/res/color/mtrl_tabs_icon_color_selector.xml"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/menu_menu_note.xml.flat",
         "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/menu/menu_note.xml"
     },
@@ -588,6 +600,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/res/layout/design_bottom_navigation_item.xml"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/xml_pref_headers.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/xml/pref_headers.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/layout/support_simple_spinner_dropdown_item.xml"
     },
@@ -602,6 +618,10 @@
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable_ic_add_circle_fab.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/drawable/ic_add_circle_fab.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable_abc_btn_check_material.xml.flat",
@@ -688,6 +708,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-xxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_media_action.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
@@ -732,6 +756,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/res/layout/design_navigation_item.xml"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/xml_pref_general.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/xml/pref_general.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/res/animator/design_fab_hide_motion_spec.xml"
     },
@@ -744,12 +772,12 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_nav_header_main.xml.flat",
-        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/layout/nav_header_main.xml"
-    },
-    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/225184367a3051258622cd710136f345/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_nav_header_main.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/layout/nav_header_main.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
@@ -794,6 +822,10 @@
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
@@ -870,6 +902,10 @@
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/xml_pref_data_sync.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/xml/pref_data_sync.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1040,6 +1076,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/res/color/mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_template_big_media.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -1098,6 +1138,10 @@
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -1260,6 +1304,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/color/abc_search_url_text.xml"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_media_cancel_action.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/color/switch_thumb_material_dark.xml"
     },
@@ -1372,6 +1420,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/xml_pref_notification.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/xml/pref_notification.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
@@ -1460,6 +1512,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_template_media.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/color-v23/abc_tint_default.xml"
     },
@@ -1520,6 +1576,10 @@
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -1538,6 +1598,10 @@
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
+        "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/80be13fec830d3e05083f6ffa0ee51c6/res/layout/notification_template_media_custom.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view_list_item.xml.flat",
@@ -1590,6 +1654,10 @@
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable_ic_sync_black_24dp.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/drawable/ic_sync_black_24dp.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/layout_activity_note.xml.flat",
@@ -1758,6 +1826,10 @@
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/drawable_ic_menu_notes.xml.flat",
+        "source": "/home/amous/Documents/apps/NoteKeeper/app/src/main/res/drawable/ic_menu_notes.xml"
     },
     {
         "merged": "/home/amous/Documents/apps/NoteKeeper/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",

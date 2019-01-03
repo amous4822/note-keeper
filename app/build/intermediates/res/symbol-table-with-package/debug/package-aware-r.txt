@@ -672,6 +672,7 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color orange_sign
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -692,6 +693,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color text_color_primary
 color tooltip_background_dark
 color tooltip_background_light
 dimen abc_action_bar_content_inset_material
@@ -1006,11 +1008,13 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_add_circle_fab
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu_camera
 drawable ic_menu_gallery
 drawable ic_menu_manage
+drawable ic_menu_notes
 drawable ic_menu_send
 drawable ic_menu_share
 drawable ic_menu_slideshow
@@ -1127,6 +1131,8 @@ id icon_group
 id ifRoom
 id image
 id imageView
+id imageView2
+id imageView4
 id info
 id invisible
 id italic
@@ -1262,6 +1268,7 @@ integer app_bar_elevation_anim_duration
 integer bottom_sheet_slide_duration
 integer cancel_button_image_alpha
 integer config_tooltipAnimTime
+integer course_grid_number
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
 integer hide_password_duration
@@ -1396,9 +1403,14 @@ string hide_bottom_view_on_scroll_behavior
 string hint_notebody
 string hint_title
 string mtrl_chip_close_icon_content_description
+string nav_courses_option
+string nav_group1
 string nav_header_desc
 string nav_header_subtitle
 string nav_header_title
+string nav_notes_option
+string nav_send_option
+string nav_share_option
 string navigation_drawer_close
 string navigation_drawer_open
 string password_toggle_content_description
@@ -1909,6 +1921,8 @@ style Widget_MaterialComponents_TextInputLayout_OutlinedBox
 style Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense
 style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
+style course_title
+style floating_button
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
