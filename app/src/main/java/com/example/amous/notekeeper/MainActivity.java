@@ -1,7 +1,11 @@
 package com.example.amous.notekeeper;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,6 +19,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -43,6 +48,10 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        PreferenceManager.setDefaultValues(this, R.xml.pref_general,false);
+        PreferenceManager.setDefaultValues(this, R.xml.pref_notification,false);
+        PreferenceManager.setDefaultValues(this, R.xml.pref_data_sync,false);
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -60,6 +69,27 @@ public class MainActivity extends AppCompatActivity
     protected void onResume() {
         super.onResume();
         mNoteRecyclerView.notifyDataSetChanged();
+
+        updateNavHeader();
+
+
+    }
+
+    private void updateNavHeader() {
+
+        NavigationView mNavView = findViewById(R.id.nav_view);
+        View mHeader = mNavView.getHeaderView(0);
+
+        TextView mUserName = mHeader.findViewById(R.id.text_user_name);
+        TextView mUserMail = mHeader.findViewById(R.id.text_user_mail);
+
+        SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(this);
+        String name = mPref.getString("pref_general_name" , "");
+        String mail = mPref.getString("pref_general_email" , "");
+
+        mUserMail.setText(mail);
+        mUserName.setText(name);
+
     }
 
     private void initializeDisplayContent() {
@@ -119,6 +149,7 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            startActivity(new Intent(this, SettingsActivity.class));
             return true;
         }
 
