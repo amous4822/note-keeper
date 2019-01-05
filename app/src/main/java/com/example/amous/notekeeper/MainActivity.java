@@ -3,6 +3,7 @@ package com.example.amous.notekeeper;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
@@ -21,6 +22,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.amous.notekeeper.Database.NotekeeperOpenHelper;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity
     private LinearLayoutManager mLinearLayoutManager;
     private CoursesListRecyclerView mCoursesRecyclerView;
     private GridLayoutManager mGridLayoutManager;
+    private NotekeeperOpenHelper mHelper;
 
 
     @Override
@@ -39,6 +43,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        mHelper = new NotekeeperOpenHelper(this);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +53,9 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(MainActivity.this, NoteActivity.class));
             }
         });
+
+
+
 
         PreferenceManager.setDefaultValues(this, R.xml.pref_general,false);
         PreferenceManager.setDefaultValues(this, R.xml.pref_notification,false);
@@ -69,9 +78,13 @@ public class MainActivity extends AppCompatActivity
     protected void onResume() {
         super.onResume();
         mNoteRecyclerView.notifyDataSetChanged();
-
         updateNavHeader();
+    }
 
+    @Override
+    protected void onDestroy() {
+        mHelper.close();
+        super.onDestroy();
 
     }
 
@@ -111,6 +124,8 @@ public class MainActivity extends AppCompatActivity
     private void displayNote() {
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
         mRecyclerView.setAdapter(mNoteRecyclerView);
+
+        SQLiteDatabase mReadableDatabase = mHelper.getReadableDatabase();
 
         navSelectionId(R.id.nav_notes);
 

@@ -35,7 +35,7 @@ public final class NoteKeeperDatabaseContract {
         public static final String SQL_CREATE_TABLE = "CREATE TABLE "+ TABLE_NAME + "( " +
                 _ID + " INTEGER PRIMARY KEY, " +
                 COLUMN_COURSE_ID + " TEXT NOT NULL , " +
-                COLUMN_NOTE_TEXT + " TEXT " +
+                COLUMN_NOTE_TEXT + " TEXT, " +
                 COLUMN_NOTE_TITLE + " TEXT NOT NULL) ";
 
     }

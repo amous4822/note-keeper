@@ -9,8 +9,6 @@ public class NotekeeperOpenHelper extends SQLiteOpenHelper {
     public static final String name = "Notekeeper.db";
     public static final int version = 1;
 
-
-
     //factory is used to change the way we interact with the database
 
     public NotekeeperOpenHelper(Context context) {
@@ -24,7 +22,9 @@ public class NotekeeperOpenHelper extends SQLiteOpenHelper {
         db.execSQL(NoteKeeperDatabaseContract.CourseInfoEntry.SQL_CREATE_TABLE);
         db.execSQL(NoteKeeperDatabaseContract.NoteInfoEntry.SQL_CREATE_TABLE);
 
-
+        DatabaseDataWorker mWorker = new DatabaseDataWorker(db);
+        mWorker.insertCourses();
+        mWorker.insertSampleNotes();
 
     }
 
