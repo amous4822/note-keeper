@@ -61,7 +61,7 @@ public class CoursesListRecyclerView extends RecyclerView.Adapter<CoursesListRec
                 public void onClick(View v) {
                     Toast.makeText(mContext, "Course card "+ mCurrentPosition +" is clicked", Toast.LENGTH_SHORT).show();
                     /*Intent mIntent = new Intent(mContext , NoteActivity.class);
-                    mIntent.putExtra(NoteActivity.NOTE_POSITION , mCurrentPosition);
+                    mIntent.putExtra(NoteActivity.NOTE_ID , mCurrentPosition);
                     mContext.startActivity(mIntent);*/
                 }
             });

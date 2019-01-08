@@ -3,7 +3,6 @@ package com.example.amous.notekeeper;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.amous.notekeeper.Database.NoteKeeperDatabaseContract;
 import com.example.amous.notekeeper.Database.NoteKeeperDatabaseContract.CourseInfoEntry;
 import com.example.amous.notekeeper.Database.NoteKeeperDatabaseContract.NoteInfoEntry;
 import com.example.amous.notekeeper.Database.NotekeeperOpenHelper;
@@ -43,7 +42,8 @@ public class DataManager {
         String[] noteColumns = {
                 NoteInfoEntry.COLUMN_COURSE_ID,
                 NoteInfoEntry.COLUMN_NOTE_TEXT,
-                NoteInfoEntry.COLUMN_NOTE_TITLE};
+                NoteInfoEntry.COLUMN_NOTE_TITLE,
+                NoteInfoEntry._ID};
         String noteOrderBy = NoteInfoEntry.COLUMN_COURSE_ID+ "," + NoteInfoEntry.COLUMN_NOTE_TITLE;
 
         Cursor mCursor1 = mDatabase.query(NoteInfoEntry.TABLE_NAME, noteColumns,
@@ -59,6 +59,7 @@ public class DataManager {
         int courseIdPos = cursor1.getColumnIndex(CourseInfoEntry.COLUMN_COURSE_ID);
         int noteTitlePos = cursor1.getColumnIndex(NoteInfoEntry.COLUMN_NOTE_TITLE);
         int noteTextPos = cursor1.getColumnIndex(NoteInfoEntry.COLUMN_NOTE_TEXT);
+        int idPos = cursor1.getColumnIndex(NoteInfoEntry._ID);
 
         dm.mNotes.clear();
         while (cursor1.moveToNext()){
@@ -66,9 +67,10 @@ public class DataManager {
             String courseId = cursor1.getString(courseIdPos);
             String noteTitle = cursor1.getString(noteTitlePos);
             String noteText = cursor1.getString(noteTextPos);
+            int id = cursor1.getInt(idPos);
 
             CourseInfo mCourse = dm.getCourse(courseId);
-            NoteInfo mNote = new NoteInfo(mCourse, noteTitle, noteText);
+            NoteInfo mNote = new NoteInfo(id, mCourse, noteTitle, noteText);
             dm.mNotes.add(mNote);
         }
 

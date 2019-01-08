@@ -37,7 +37,7 @@ public class NoteListRecyclerView extends RecyclerView.Adapter<NoteListRecyclerV
         noteListHolder.mNoteTitle.setText(mNote.getTitle());
         noteListHolder.mNoteText.setText(mNote.getCourse().getTitle());
 
-        noteListHolder.mCurrentPosition = i;
+        noteListHolder.mId = mNote.getId();
 
     }
 
@@ -50,7 +50,7 @@ public class NoteListRecyclerView extends RecyclerView.Adapter<NoteListRecyclerV
 
         public final TextView mNoteTitle;
         public final TextView mNoteText;
-        private int mCurrentPosition;
+        private int mId;
 
         public NoteListHolder(@NonNull View itemView) {
             super(itemView);
@@ -62,7 +62,7 @@ public class NoteListRecyclerView extends RecyclerView.Adapter<NoteListRecyclerV
                 @Override
                 public void onClick(View v) {
                     Intent mIntent = new Intent(mContext , NoteActivity.class);
-                    mIntent.putExtra(NoteActivity.NOTE_POSITION , mCurrentPosition);
+                    mIntent.putExtra(NoteActivity.NOTE_ID, mId);
                     mContext.startActivity(mIntent);
                 }
             });
