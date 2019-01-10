@@ -1,13 +1,17 @@
 package com.example.amous.notekeeper;
 
-import android.content.Context;
+import android.annotation.SuppressLint;
+import android.app.LoaderManager;
+import android.content.CursorLoader;
 import android.content.Intent;
+import android.content.Loader;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -21,14 +25,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
+
+import com.example.amous.notekeeper.Database.NoteKeeperDatabaseContract.NoteInfoEntry;
+import com.example.amous.notekeeper.Database.NoteKeeperDatabaseContract.CourseInfoEntry;
 import com.example.amous.notekeeper.Database.NotekeeperOpenHelper;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, LoaderManager.LoaderCallbacks<Cursor> {
 
+    public static final int LOADER_NOTES = 0;
     private NoteListRecyclerView mNoteRecyclerView;
     private RecyclerView mRecyclerView;
     private LinearLayoutManager mLinearLayoutManager;
@@ -54,12 +63,9 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-
-
-
-        PreferenceManager.setDefaultValues(this, R.xml.pref_general,false);
-        PreferenceManager.setDefaultValues(this, R.xml.pref_notification,false);
-        PreferenceManager.setDefaultValues(this, R.xml.pref_data_sync,false);
+        PreferenceManager.setDefaultValues(this, R.xml.pref_general, false);
+        PreferenceManager.setDefaultValues(this, R.xml.pref_notification, false);
+        PreferenceManager.setDefaultValues(this, R.xml.pref_data_sync, false);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -77,7 +83,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-        mNoteRecyclerView.notifyDataSetChanged();
+        getLoaderManager().restartLoader(LOADER_NOTES, null, this);
         updateNavHeader();
     }
 
@@ -97,8 +103,8 @@ public class MainActivity extends AppCompatActivity
         TextView mUserMail = mHeader.findViewById(R.id.text_user_mail);
 
         SharedPreferences mPref = PreferenceManager.getDefaultSharedPreferences(this);
-        String name = mPref.getString("pref_general_name" , "");
-        String mail = mPref.getString("pref_general_email" , "");
+        String name = mPref.getString("pref_general_name", "");
+        String mail = mPref.getString("pref_general_email", "");
 
         mUserMail.setText(mail);
         mUserName.setText(name);
@@ -112,12 +118,11 @@ public class MainActivity extends AppCompatActivity
         mRecyclerView = findViewById(R.id.list_item);
 
         mLinearLayoutManager = new LinearLayoutManager(this);
-        List<NoteInfo> mNotes = DataManager.getInstance().getNotes();
-        mNoteRecyclerView = new NoteListRecyclerView(this, mNotes);
+        mNoteRecyclerView = new NoteListRecyclerView(this, null);
 
-        mGridLayoutManager = new GridLayoutManager(this , getResources().getInteger(R.integer.course_grid_number));
+        mGridLayoutManager = new GridLayoutManager(this, getResources().getInteger(R.integer.course_grid_number));
         List<CourseInfo> mCourses = DataManager.getInstance().getCourses();
-        mCoursesRecyclerView = new CoursesListRecyclerView(this , mCourses);
+        mCoursesRecyclerView = new CoursesListRecyclerView(this, mCourses);
 
         displayNote();
 
@@ -199,8 +204,63 @@ public class MainActivity extends AppCompatActivity
 
         mRecyclerView.setAdapter(mCoursesRecyclerView);
         mRecyclerView.setLayoutManager(mGridLayoutManager);
-
         navSelectionId(R.id.nav_courses);
 
     }
+
+    @Override
+    public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
+        CursorLoader mLoader = null;
+        if (LOADER_NOTES == i)
+            mLoader = loadNotes();
+
+        return mLoader;
+    }
+
+    @Override
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+
+        if (loader.getId() == LOADER_NOTES)
+            mNoteRecyclerView.changeCursor(data);
+    }
+
+    @Override
+    public void onLoaderReset(Loader<Cursor> loader) {
+        if (loader.getId() == LOADER_NOTES)
+            mNoteRecyclerView.changeCursor(null);
+
+    }
+
+    @SuppressLint("StaticFieldLeak")
+    private CursorLoader loadNotes() {
+
+        return new CursorLoader(this) {
+            @Override
+            public Cursor loadInBackground() {
+
+                SQLiteDatabase mDatabase = mHelper.getReadableDatabase();
+
+                String[] noteColumns = {
+                        NoteInfoEntry.COLUMN_NOTE_TITLE,
+                        CourseInfoEntry.COLUMN_COURSE_TITLE,
+                        NoteInfoEntry.notesTableName(NoteInfoEntry._ID)
+                };
+
+
+                String noteOrderBy = CourseInfoEntry.COLUMN_COURSE_TITLE + "," +
+                        NoteInfoEntry.COLUMN_NOTE_TITLE;
+
+                //noteInfo JOIN courseInfo ON courseInfo.COURSE_ID = noteInfo.COURSE_ID
+                String joinTable = NoteInfoEntry.TABLE_NAME + " JOIN " + CourseInfoEntry.TABLE_NAME + " ON " +
+                        CourseInfoEntry.courseTableName(CourseInfoEntry.COLUMN_COURSE_ID) + " = " +
+                        NoteInfoEntry.notesTableName(NoteInfoEntry.COLUMN_COURSE_ID);
+
+                return mDatabase.query(joinTable, noteColumns,
+                        null, null, null, null, noteOrderBy);
+            }
+        };
+
+    }
+
+
 }

@@ -21,6 +21,7 @@
         <activity
             android:name="com.example.amous.notekeeper.NoteActivity"
             android:label="@string/title_activity_note"
+            android:parentActivityName="com.example.amous.notekeeper.MainActivity"
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.amous.notekeeper.NoteListActivity"

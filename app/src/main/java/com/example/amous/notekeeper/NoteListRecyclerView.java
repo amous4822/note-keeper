@@ -2,6 +2,7 @@ package com.example.amous.notekeeper;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,18 +10,43 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.List;
+import com.example.amous.notekeeper.Database.NoteKeeperDatabaseContract;
 
 public class NoteListRecyclerView extends RecyclerView.Adapter<NoteListRecyclerView.NoteListHolder> {
 
     private final Context mContext;
     private final LayoutInflater mLayoutInflater;
-    private final List<NoteInfo> mNotes;
+    private Cursor mCursor;
+    private int mNoteCoursePos;
+    private int mNoteTitlePos;
+    private int mNoteId;
 
-    public NoteListRecyclerView(Context context, List<NoteInfo> notes) {
+    public NoteListRecyclerView(Context context, Cursor mNotes) {
         mContext = context;
-        mNotes = notes;
+        mCursor =mNotes;
         mLayoutInflater = LayoutInflater.from(mContext);
+        populateColumnPos();
+    }
+
+    private void populateColumnPos() {
+
+        if(mCursor == null)
+            return;
+
+        mNoteCoursePos = mCursor.getColumnIndex(NoteKeeperDatabaseContract.CourseInfoEntry.COLUMN_COURSE_TITLE);
+        mNoteTitlePos = mCursor.getColumnIndex(NoteKeeperDatabaseContract.NoteInfoEntry.COLUMN_NOTE_TITLE);
+        mNoteId = mCursor.getColumnIndex(NoteKeeperDatabaseContract.NoteInfoEntry._ID);
+
+    }
+
+    public void changeCursor(Cursor cursor){
+
+        if (mCursor != null)
+            mCursor.close();
+
+        mCursor=cursor;
+        populateColumnPos();
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -33,30 +59,33 @@ public class NoteListRecyclerView extends RecyclerView.Adapter<NoteListRecyclerV
     @Override
     public void onBindViewHolder(@NonNull NoteListHolder noteListHolder, int i) {
 
-        NoteInfo mNote = mNotes.get(i);
-        noteListHolder.mNoteTitle.setText(mNote.getTitle());
-        noteListHolder.mNoteText.setText(mNote.getCourse().getTitle());
+        mCursor.moveToPosition(i);
+        String noteCourse = mCursor.getString(mNoteCoursePos);
+        String noteTitle = mCursor.getString(mNoteTitlePos);
+        int noteId = mCursor.getInt(mNoteId);
 
-        noteListHolder.mId = mNote.getId();
+        noteListHolder.mNoteTitle.setText(noteTitle);
+        noteListHolder.mNoteCourse.setText(noteCourse);
+        noteListHolder.mId = noteId;
 
     }
 
     @Override
     public int getItemCount() {
-        return mNotes.size();
+        return mCursor == null ? 0 : mCursor.getCount();
     }
 
     public class NoteListHolder extends RecyclerView.ViewHolder{
 
         public final TextView mNoteTitle;
-        public final TextView mNoteText;
+        public final TextView mNoteCourse;
         private int mId;
 
         public NoteListHolder(@NonNull View itemView) {
             super(itemView);
 
             mNoteTitle = itemView.findViewById(R.id.note_title);
-            mNoteText = itemView.findViewById(R.id.note_course);
+            mNoteCourse = itemView.findViewById(R.id.note_course);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -3630,6 +3630,7 @@
         <item name="windowNoTitle">true</item>
     </style><style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/><style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/><style name="course_title" parent="@android:style/TextAppearance.Material.Large">
         <item name="android:textColor">@color/orange_sign</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
     </style><style name="floating_button" parent="@style/Widget.Design.FloatingActionButton">
         <item name="android:src">@drawable/ic_add_circle_fab</item>

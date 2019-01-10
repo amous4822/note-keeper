@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
 MERGED from [com.android.support:design:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/73e20184c3f48019f6b793c87310e351/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/amous/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9c7bb7cf05258e172158524c2f4bf1b8/AndroidManifest.xml:2:1-11:12
@@ -37,27 +37,27 @@ MERGED from [com.android.support:interpolator:28.0.0] /home/amous/.gradle/caches
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/amous/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/b7eb21e4f4fa54a52c0d94e830eb1860/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/amous/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/9716f993759d7d82e147b8a46f8ade3c/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /home/amous/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/0b8d24c8cba54218d2873c09af258a86/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:4:5-43
 		INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml
 		INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
 		INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:1-48:12
 		INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:6:5-41:19
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:6:5-46:19
 MERGED from [com.android.support:design:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /home/amous/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/b5283cba0a3e6da165105d4c48fb65ff/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/amous/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9c7bb7cf05258e172158524c2f4bf1b8/AndroidManifest.xml:9:5-20
@@ -83,7 +83,9 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /home/amous/.gradle
 	android:theme
 		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:12:9-40
 activity#com.example.amous.notekeeper.NoteActivity
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:14:9-17:47
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:14:9-18:57
+	android:parentActivityName
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:18:13-55
 	android:label
 		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:16:13-56
 	android:theme
@@ -91,47 +93,47 @@ ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xm
 	android:name
 		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:15:13-41
 activity#com.example.amous.notekeeper.NoteListActivity
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:18:9-21:59
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:20:9-23:59
 	android:label
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:20:13-45
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:22:13-45
 	android:theme
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:21:13-56
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:23:13-56
 	android:name
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:19:13-45
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:21:13-45
 activity#com.example.amous.notekeeper.MainActivity
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:22:9-31:20
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:24:9-33:20
 	android:label
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:24:13-56
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:26:13-56
 	android:theme
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:25:13-56
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:27:13-56
 	android:name
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:23:13-41
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:25:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:26:13-30:29
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:31:27-74
 activity#com.example.amous.notekeeper.SettingsActivity
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:32:9-40:20
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:36:9-44:20
 	android:parentActivityName
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:36:13-55
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:40:13-55
 	android:label
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:34:13-60
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:38:13-60
 	android:theme
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:35:13-43
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:39:13-43
 	android:name
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:33:13-45
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:37:13-45
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:37:13-39:77
+ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:41:13-43:77
 	android:value
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:39:17-74
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:43:17-74
 	android:name
-		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:38:17-63
+		ADDED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml:42:17-63
 uses-sdk
 INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/amous/Documents/apps/NoteKeeper/app/src/main/AndroidManifest.xml
